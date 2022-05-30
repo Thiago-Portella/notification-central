@@ -1,0 +1,7 @@
+POST http://localhost:8080/type
+Content-Type: application/json
+
+{
+    "title":"Empréstimo",
+    "description":"Sobre empréstimos"
+}

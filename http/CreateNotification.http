@@ -1,0 +1,8 @@
+POST  http://localhost:8080/notification
+Content-Type: application/json
+
+{
+    "notificationTypeId":2,
+    "title":"compre aqui o seu presente do dia dos namorados",
+    "message":"Você já comprou o presente para o seu namorado? Clique aqui e confira nossas promoções!"
+}

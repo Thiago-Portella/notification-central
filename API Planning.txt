@@ -1,0 +1,15 @@
+DOMAIN CLASSES
+
+* data class Notification: notificationId: Long? = null, notificationType: NotificationType, title: String, message: String, creationDate: LocalDateTime = LocalDateTime.now(), status: NotificationStatus = CREATED
+* data class NotificationType: typeId: Long? = null, title: String, description: String
+* enum class NotificationStatus: CREATED, SENT, READ, NOT_READ
+
+DTO CLASSES
+
+data class NotificationForm: notificationTypeId: Long, title: String, message: String
+data class NotificationVew: notificationTypeTitle: String, title: String, message: String, creationDate: LocalDateTime, status: NotificationStatus
+
+BUSINESS RULES
+
+As notificações devem ser criadas, listadas, buscadas e editadas por meio de endipoints.
+Os tipos de notificações devem ser criados, listados, buscados e editados também.
